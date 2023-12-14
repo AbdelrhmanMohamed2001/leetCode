@@ -28,6 +28,31 @@ class Solution {
                 nums[i]=nums[j];
             }
 
+
+
+
+
+
+/*
+USING SET DATA STRUCTURE
+set data strucure that contains only unique and sorted values
+put all values from list to the set
+return the values after removing duplicates
+return the size of the set = number of values
+ */
+class Main{
+    public static int removeDuplicates(int[] nums){
+        Set<Integer> hashset= new HashSet<>();
+        for(int i=0; i< nums.length; i++){
+            hashset.add(nums[i]);
+        }
+        System.out.println(hashset);
+        return hashset.size();
+
+    }
+         
+         
+
         }
         return i+1;
 
